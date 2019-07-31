@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:1.13
+    ports:
+      - 8087:80
+    volumes:
+      - "~:/var/foo"
+      - "./folders.conf:/etc/nginx/nginx.conf"
